@@ -68,6 +68,13 @@ public class Transaction {
 		this.signature = signature;
 	}
 		
-
+	public String toString() {
+		return "hash = " + this.getHash() + 
+				"\n" + "prev_has = " + this.getHash() + 
+				"\n" + "pKey_Sender = " + this.getpKey_sender().hashCode() + 
+				"\n" + "pKey_Recipient = " + this.getpKey_recipient().hashCode() + 
+				"\n" + "pigCoins = " + this.getPigcoins() + 
+				"\n" + "message = " + this.getMessage();
+	}
 
 }
